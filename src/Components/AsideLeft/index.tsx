@@ -22,7 +22,7 @@ const Header: React.FC = () => {
             <img src={compassoImg}/>
             <strong>Seja Bem-vindo</strong>
             <p>Ao meu teste técnico</p>
-            <h1>Digite um nome de Usuario para ver:</h1>
+            <h1>Digite um nome de Usuario:</h1>
             <div className="main-container">
                 <input 
                     placeholder="Digite um Usuario" 
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                     onChange={e => setSearch(e.currentTarget.value)}
                 />                
                 <button className="search-user" onClick={handleSubmitUser}>
-                        Procurar Usuario
+                        Procurar
                 </button>
                 <div className="separator">ou entre no site</div>
                 <div className="back-to-site">

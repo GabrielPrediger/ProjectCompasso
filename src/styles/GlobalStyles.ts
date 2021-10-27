@@ -15,6 +15,7 @@ export default createGlobalStyle `
         background: none;
         font: 400 16px 'Roboto', sans-serif;
         color: var(--black);
+        text-decoration:none;
     }
     ul{
         list-style: none;
@@ -44,7 +45,26 @@ export default createGlobalStyle `
         --javascript: #f1e05a;
         --typescript: #2b7489;
         --other-language: #8257e5;
+        --cor-neon: #25D285;
+
     }
 
+    .github-image{
+        width: 5%;
+        left: 65%;
+        bottom: 50%;
+        position: absolute;
+        animation: neon 4s alternate infinite ease-in-out ;
+	    --cor-neon: #e1e4e8;
+        
+    }
 
+    @keyframes neon {
+	from {
+		filter: drop-shadow(0 0 1px var(--cor-neon));
+	}
+	to {
+		filter: drop-shadow(0 0 30px var(--cor-neon));
+	}
+}
 `;

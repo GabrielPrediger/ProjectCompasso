@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import github from './images/github.png';
 
 import { 
   Container, 
@@ -35,8 +36,7 @@ const Profile: React.FC = () => {
       const [userResponse, reposResponse] = responses;
 
       if (userResponse.status === 404){
-        setData({ error: 'Busque por um Usuario/Org valido'})
-        return;
+        return <img src={github} className="github-image"/>
       }
 
       const user = await userResponse.json();
@@ -51,11 +51,11 @@ const Profile: React.FC = () => {
 
 
   if (data?.error){
-    return <h1>{data.error}</h1>
+    return <h1 className="default-message">{data.error}</h1>
   }
 
   if (!data?.user || !data?.repos){
-    return <h1>Loading...</h1>
+    return <img src={github} className="github-image"/>
   }
 
   const TabContent = () => (
@@ -92,7 +92,7 @@ const Profile: React.FC = () => {
           />
         </LeftSide>
 
-        <RightSide>
+        <RightSide> 
           <Tab className="mobile">
             <TabContent/>
             <span className="line"/>
