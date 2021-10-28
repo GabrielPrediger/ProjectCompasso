@@ -96,6 +96,33 @@ export const Botside = styled.div `
         &.ruby{
             background-color: #701516;
         }
+        &.php{
+            background-color: #4F5D95;
+        }
+        &.html{
+            background-color: #e34c26;
+        }
+        &.shell{
+            background-color: #89e051;
+        }
+        &.stylus{
+            background-color: #ff6347;
+        }
+        &.c{
+            background-color: #555555;
+        }
+        &.go{
+            background-color: #00ADD8;
+        }
+        &.dockerfile{
+            background-color: #384d54;
+        }
+        &.vim{
+            background-color: #199f4b;
+        }
+        &.css{
+            background-color: #563d7c;
+        }
     }
 
 `;

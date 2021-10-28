@@ -14,13 +14,14 @@ export const Container = styled.div`
 
 export const Main = styled.div `
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     margin: 0 auto;
     max-width: 1280px;
 
-    @media (min-width: 768px){
-        flex-direction: row;
+    @media(max-width: 1128px) {
+        display: flex;
+        flex-direction: column;
     }
 `;
 

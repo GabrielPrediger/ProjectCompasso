@@ -64,6 +64,7 @@ const Profile: React.FC = () => {
 
       <span className="label">Repositorios</span>
       <span className="number">{data.user?.public_repos}</span>
+
     </div>
   )
   return (

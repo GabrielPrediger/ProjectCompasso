@@ -5,10 +5,15 @@ import { RiBookmarkLine, RiGroupLine, RiBuilding4Line, RiMapPin2Line, RiMailLine
 export const Container = styled.div`
         flex: 8;
         padding: 0 32px;
+        margin-top: 50px;
         display:flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        @media(max-width: 1128px) {
+            margin-left: 150px;
+    }
 `;
 
 export const Flex = styled.div`
@@ -68,6 +73,20 @@ export const Row = styled.ul`
         }
         b{
             margin-bottom: 2.5px;
+        }
+    }
+
+    @media(max-width: 1450px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media(max-width: 1128px) {
+        display: flex;
+        flex-direction: row;
+        margin-left: 45px;
+        > li{
+            flex-wrap: nowrap;
         }
     }
 `;
