@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { Container, } from './styles';
-import compassoImg from './images/compasso.png';
 
 
 const Header: React.FC = () => {
@@ -19,7 +18,6 @@ const Header: React.FC = () => {
   return (
     <Container id="page-auth">
         <aside>
-            <img src={compassoImg}/>
             <strong>Seja Bem-vindo</strong>
             <p>Ao meu teste técnico</p>
             <h1>Digite um nome de Usuario:</h1>
@@ -34,8 +32,8 @@ const Header: React.FC = () => {
                 </button>
                 <div className="separator">ou entre no site</div>
                 <div className="back-to-site">
-                    <a href="https://compassouol.com/">
-                          CompassoUOL
+                    <a href="https://github.com/">
+                          GitHub
                     </a>
                 </div>
             </div>
